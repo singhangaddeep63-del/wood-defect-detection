@@ -14,3 +14,9 @@ The app takes a photo of a wood board and returns "good" or "defect" with a scor
 - good_2.jpg (true: good, predicted: defect, score 0.637). The board contains a visible knot, which the model likely associates with defects.
 
 Next steps: crop the black borders, test a higher input resolution, and review how the dataset labels small knots.
+
+## Dataset
+
+The model was trained on the public wood surface defects dataset by Kodytek, Bodzas and Bilik, hosted on Kaggle (about 20.3k files, 4.42 GB, CC0 public domain license).
+
+Citation: Kodytek P, Bodzas A, Bilik P. A large-scale image dataset of wood surface defects for automated vision-based quality control processes. F1000Research 2021, 10:581. https://doi.org/10.12688/f1000research.52903.1
