@@ -1,0 +1,12 @@
+# Wood Defect Detection
+
+Deep learning model that classifies wood boards as good or defective.
+
+## Error analysis (20 sample boards: 18 correct)
+
+- defect_5.jpg (true: defect, predicted: good, score 0.366). The board shows only small, low-contrast marks (a tiny brown spot, a thin streak, and small surface bumps), which are easy to lose when the wide image is resized to a square input.
+- good_2.jpg (true: good, predicted: defect, score 0.637). The board contains a visible knot, which the model likely associates with defects.
+
+Next steps: crop the black borders, test a higher input resolution, and review how the dataset labels small knots.
+
+
