@@ -41,3 +41,31 @@ Labels: a board counts as "defect" if it has at least one annotated box (includi
 - The threshold of 0.4 was picked from a table of missed defects against false alarms. That table was printed for both the validation and test sets, so the test numbers are slightly optimistic.
 - The split is random by image. A quick check found no near-identical boards across train, validation and test, but it was a coarse check.
 - In this dataset, "defect" includes any annotated knot, so the label depends on the dataset's annotation rules.
+
+## How to run
+
+Tested with Python 3.12 on Windows.
+
+```
+git clone https://github.com/singhangaddeep63-del/wood-defect-detection.git
+cd wood-defect-detection
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Download `wood_model_20k.keras` from the Releases page of this repository and put it in the project folder, next to `README.md`. The model file is not stored in the repository because of its size.
+
+Start the demo app:
+
+```
+python app\app.py
+```
+
+Then open http://127.0.0.1:7860 in your browser.
+
+To classify a whole folder of images and save the results to `predictions.csv`:
+
+```
+python src\predict.py "path\to\your\images"
+```
