@@ -1,4 +1,23 @@
 # Wood Defect Detection
+Deep learning model that classifies wood boards as good or defective, with a Gradio demo app.
+Deep learning model that classifies wood boards as good or defective, with a Gradio demo app.
+
+## Demo
+
+![Demo of the wood defect detection app](assets/demo.png)
+
+The app takes a photo of a wood board and returns "good" or "defect" with a score (threshold 0.4).Deep learning model that classifies wood boards as good or defective, with a Gradio demo app.
+
+## Demo
+
+![Demo of the wood defect detection app](assets/demo.png)
+
+The app takes a photo of a wood board and returns "good" or "defect" with a score (threshold 0.4).
+## Demo
+
+![Demo of the wood defect detection app](assets/demo.png)
+
+The app takes a photo of a wood board and returns "good" or "defect" with a score (threshold 0.4).
 
 Deep learning model that classifies wood boards as good or defective.
 
