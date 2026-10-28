@@ -1,0 +1,7 @@
+venv/
+.git/
+data/
+notebooks/
+__pycache__/
+*.ipynb
+wood_model_final.keras
