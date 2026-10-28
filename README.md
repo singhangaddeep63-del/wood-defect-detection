@@ -69,3 +69,6 @@ To classify a whole folder of images and save the results to `predictions.csv`:
 ```
 python src\predict.py "path\to\your\images"
 ```
+## Training
+
+The model was trained on Google Colab with a GPU. The full code is in [notebooks/03_train_wood20k.ipynb](notebooks/03_train_wood20k.ipynb). The final training run is the large cell that starts with `# ---- GPU and Drive ----`. The cells after it are experiments (duplicate check, flip averaging, and a higher-resolution run at 256x704 pixels).
