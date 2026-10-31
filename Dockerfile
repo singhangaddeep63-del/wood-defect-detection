@@ -9,6 +9,7 @@ COPY app/ app/
 COPY wood_model_20k.keras .
 
 ENV GRADIO_SERVER_NAME=0.0.0.0
+ENV PYTHONUNBUFFERED=1
 EXPOSE 7860
 
 CMD ["python", "app/app.py"]

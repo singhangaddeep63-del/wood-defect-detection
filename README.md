@@ -72,3 +72,14 @@ python src\predict.py "path\to\your\images"
 ## Training
 
 The model was trained on Google Colab with a GPU. The full code is in [notebooks/03_train_wood20k.ipynb](notebooks/03_train_wood20k.ipynb). The final training run is the large cell that starts with `# ---- GPU and Drive ----`. The cells after it are experiments (duplicate check, flip averaging, and a higher-resolution run at 256x704 pixels).
+## Run with Docker
+
+The trained model `wood_model_20k.keras` is not stored in this repository
+(it is in `.gitignore`). Put it in the project's main folder first, then:
+
+```
+docker build -t wood-defect .
+docker run --rm -p 7860:7860 wood-defect
+```
+
+Open http://localhost:7860 and upload a photo of a wood board.
